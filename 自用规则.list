@@ -17,7 +17,6 @@ host, bookkeeper.itunes.apple.com, 美国节点
 host-suffix, gstatic.com, 全球加速
 host-suffix, cloudflare.com, 全球加速
 host-suffix, blobstore.apple.com, direct
-host, gateway.icloud.com.cn, 美国节点
 host, weather-data.apple.com, 美国节点
 host, gsa.apple.com, 美国节点
 host-suffix, annangela.cn, 全球加速
