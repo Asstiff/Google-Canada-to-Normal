@@ -8,8 +8,7 @@ host-suffix, mall.bilibili.com, reject
 host-suffix, ls.apple.com, 美国节点
 host-suffix, guzzoni.apple.com, 美国节点
 host, dl.l.google.com, 全球加速
-
-host,lookup-api.apple.com, 美国节点
+host, lookup-api.apple.com, 美国节点
 host, dl.google.com, 全球加速
 host, pd.itunes.apple.com, 美国节点
 host-suffix, mzstatic.com, 美国节点
