@@ -46,6 +46,7 @@ host, gsas.apple.com, 美国节点
 host, gsa.apple.com, 美国节点
 host-suffix, hitun.io, 全球加速
 host, news-assets.apple.com, 美国节点
+host, news-client.apple.com, 美国节点
 host, apple.comscoreresearch.com, 美国节点
 host, news-events.apple.com, 美国节点
 host, news-edge.apple.com, 美国节点
