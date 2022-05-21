@@ -59,3 +59,17 @@ host-keyword, biligame.net, reject
 host, play-edge.itunes.apple.com, direct
 host, cloudflare-dns.com, 全球加速
 host-suffix, coolapk.com, direct
+
+
+# Copies
+# 避免迅雷版权问题
+host, hub5idx.v6.shub.sandai.net, reject
+host, hub5emu.v6.shub.sandai.net, reject
+host, hub5btmain.v6.shub.sandai.net, reject
+
+# 银行
+HOST-SUFFIX,95599.cn,direct
+HOST-SUFFIX,abchina.com,direct
+HOST-SUFFIX,bscabank.com,direct
+HOST-SUFFIX,openaboc.cn,direct
+HOST-SUFFIX,openaboc.com,direct
