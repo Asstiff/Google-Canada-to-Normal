@@ -6,6 +6,7 @@ host, appldnld.apple.com, 美国节点
 host-suffix, apple.news, 美国节点
 host-suffix, branch.io, 美国节点
 host-suffix, dewrain.life, 美国节点
+host-suffix, digicert.com, 美国节点
 host-keyword, smoot, 美国节点
 host-keyword, prod.apple.com, 美国节点
 host, configuration.apple.com, 美国节点
