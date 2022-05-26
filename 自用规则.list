@@ -5,6 +5,7 @@ host, ocsp2.apple.com, 美国节点
 host, appldnld.apple.com, 美国节点
 host-suffix, apple.news, 美国节点
 host-suffix, branch.io, 美国节点
+host-keyword, vaicore, 美国节点
 host-keyword, dewrain, 美国节点
 host-keyword, digicert, 美国节点
 host-keyword, akisinn, 美国节点
