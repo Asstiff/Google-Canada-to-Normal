@@ -5,7 +5,7 @@ host-suffix, sectigo.com, 美国节点
 host-suffix, zxzjtv.com, 香港节点
 host-keyword, dynacw, 台湾节点
 host, mesu.apple.com, 美国节点
-host, gspe**-cn-ssl.ls.apple.com, direct
+host, gspe19-cn-ssl.ls.apple.com, direct
 host, ocsp2.apple.com, 美国节点
 host, appldnld.apple.com, 美国节点
 host-suffix, apple.news, 美国节点
