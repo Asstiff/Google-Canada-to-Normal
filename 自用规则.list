@@ -82,3 +82,11 @@ HOST-SUFFIX,abchina.com,direct
 HOST-SUFFIX,bscabank.com,direct
 HOST-SUFFIX,openaboc.cn,direct
 HOST-SUFFIX,openaboc.com,direct
+
+# Steam
+HOST, steamcommunity.com, 全球加速
+HOST, steamgames.com, 全球加速
+HOST, steamusercontent.com, 全球加速
+HOST, steamcontent.com, 全球加速
+HOST, steamstatic.com, 全球加速
+HOST, akamaihd.net, 全球加速
