@@ -90,3 +90,5 @@ HOST, steamusercontent.com, 全球加速
 HOST, steamcontent.com, 全球加速
 HOST, steamstatic.com, 全球加速
 HOST, akamaihd.net, 全球加速
+
+HOST-KEYWORD, tubi, 美国节点
