@@ -18,7 +18,7 @@ DOMAIN-KEYWORD, smoot, 美国节点
 DOMAIN-KEYWORD, prod.apple.com, 美国节点
 DOMAIN, configuration.apple.com, 美国节点
 DOMAIN-KEYWORD, stocks, 美国节点
-DOMAIN-SUFFIX, mall.bilibili.com, reject
+DOMAIN-SUFFIX, mall.bilibili.com, REJECT
 DOMAIN-SUFFIX, guzzoni.apple.com, 美国节点
 DOMAIN, lookup-api.apple.com, 美国节点
 DOMAIN, dl.l.google.com, 全球加速
@@ -29,7 +29,7 @@ DOMAIN-SUFFIX, books.apple.com, 美国节点
 DOMAIN, bookkeeper.itunes.apple.com, 美国节点
 DOMAIN-SUFFIX, gstatic.com, 全球加速
 DOMAIN-SUFFIX, cloudflare.com, 全球加速
-DOMAIN-SUFFIX, blobstore.apple.com, direct
+DOMAIN-SUFFIX, blobstore.apple.com, DIRECT
 DOMAIN, weather-data.apple.com, 美国节点
 DOMAIN, gsa.apple.com, 美国节点
 DOMAIN-SUFFIX, annangela.cn, 全球加速
@@ -38,8 +38,8 @@ DOMAIN, mtalk.google.com, 全球加速
 DOMAIN, clientservices.googleapis.com, 全球加速
 DOMAIN-SUFFIX, cloudflare.com, 全球加速
 DOMAIN-SUFFIX, gstatic.com, 全球加速
-DOMAIN-SUFFIX, blobstore.apple.com, direct
-DOMAIN, sgminorshort.wechat.com, direct
+DOMAIN-SUFFIX, blobstore.apple.com, DIRECT
+DOMAIN, sgminorshort.wechat.com, DIRECT
 DOMAIN, sgshort.wechat.com, direct
 DOMAIN, cdnjs.cloudflare.com, 全球加速
 DOMAIN, xp.apple.com, 美国节点
@@ -59,29 +59,29 @@ DOMAIN, apple.comscoreresearch.com, 美国节点
 DOMAIN, news-events.apple.com, 美国节点
 DOMAIN, news-edge.apple.com, 美国节点
 DOMAIN, gateway.icloud.com, 美国节点
-DOMAIN-SUFFIX, tv.apple.com, direct
-DOMAIN, game.bilibili.com, reject
+DOMAIN-SUFFIX, tv.apple.com, DIRECT
+DOMAIN, game.bilibili.com, REJECT
 DOMAIN, translate.googleapis.com, 香港节点
 DOMAIN, api.hcaptcha.com, 香港节点
 DOMAIN, hcaptcha.com, 香港节点
-DOMAIN-KEYWORD, biligame.net, reject
-DOMAIN, play-edge.itunes.apple.com, direct
+DOMAIN-KEYWORD, biligame.net, REJECT
+DOMAIN, play-edge.itunes.apple.com, DIRECT
 DOMAIN, cloudflare-dns.com, 全球加速
-DOMAIN-SUFFIX, coolapk.com, direct
+DOMAIN-SUFFIX, coolapk.com, DIRECT
 
 
 # Copies
 # 避免迅雷版权问题
-DOMAIN, hub5idx.v6.shub.sandai.net, reject
-DOMAIN, hub5emu.v6.shub.sandai.net, reject
-DOMAIN, hub5btmain.v6.shub.sandai.net, reject
+DOMAIN, hub5idx.v6.shub.sandai.net, REJECT
+DOMAIN, hub5emu.v6.shub.sandai.net, REJECT
+DOMAIN, hub5btmain.v6.shub.sandai.net, REJECT
 
 # 银行
-DOMAIN-SUFFIX,95599.cn,direct
-DOMAIN-SUFFIX,abchina.com,direct
-DOMAIN-SUFFIX,bscabank.com,direct
-DOMAIN-SUFFIX,openaboc.cn,direct
-DOMAIN-SUFFIX,openaboc.com,direct
+DOMAIN-SUFFIX,95599.cn,DIRECT
+DOMAIN-SUFFIX,abchina.com,DIRECT
+DOMAIN-SUFFIX,bscabank.com,DIRECT
+DOMAIN-SUFFIX,openaboc.cn,DIRECT
+DOMAIN-SUFFIX,openaboc.com,DIRECT
 
 # Steam
 DOMAIN, steamcommunity.com, 全球加速
