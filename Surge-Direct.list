@@ -1,13 +1,13 @@
-host-suffix, blobstore.apple.com
-host-suffix, blobstore.apple.com
-host, sgminorshort.wechat.com
-host, sgshort.wechat.com
-host, c.youdao.com
-host-suffix, tv.apple.com
-host, play-edge.itunes.apple.com
-host-suffix, coolapk.com
-HOST-SUFFIX,95599.cn
-HOST-SUFFIX,abchina.com
-HOST-SUFFIX,bscabank.com
-HOST-SUFFIX,openaboc.cn
-HOST-SUFFIX,openaboc.com
+DOMAIN-SUFFIX, blobstore.apple.com
+DOMAIN-SUFFIX, blobstore.apple.com
+DOMAIN, sgminorshort.wechat.com
+DOMAIN, sgshort.wechat.com
+DOMAIN, c.youdao.com
+DOMAIN-SUFFIX, tv.apple.com
+DOMAIN, play-edge.itunes.apple.com
+DOMAIN-SUFFIX, coolapk.com
+DOMAIN-SUFFIX,95599.cn
+DOMAIN-SUFFIX,abchina.com
+DOMAIN-SUFFIX,bscabank.com
+DOMAIN-SUFFIX,openaboc.cn
+DOMAIN-SUFFIX,openaboc.com

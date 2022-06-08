@@ -1,8 +1,8 @@
-host-suffix, mall.bilibili.com, reject
-ip-cidr, 203.107.1.1/24, reject
-host, ad.12306.cn, reject
-host, game.bilibili.com, reject
-host-keyword, biligame.net, reject
-host, hub5idx.v6.shub.sandai.net, reject
-host, hub5emu.v6.shub.sandai.net, reject
-host, hub5btmain.v6.shub.sandai.net, reject
+DOMAIN-SUFFIX, mall.bilibili.com
+IP-CIDR, 203.107.1.1/24
+DOMAIN, ad.12306.cn
+DOMAIN, game.bilibili.com
+DOMAIN-KEYWORD, biligame.net
+DOMAIN, hub5idx.v6.shub.sandai.net
+DOMAIN, hub5emu.v6.shub.sandai.net
+DOMAIN, hub5btmain.v6.shub.sandai.net
