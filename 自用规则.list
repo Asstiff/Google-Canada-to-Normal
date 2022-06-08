@@ -2,7 +2,7 @@ host-keyword, siri, 美国节点
 host-keyword, pbs, 美国节点
 host-suffix, pki.goog, 美国节点
 host-suffix, sectigo.com, 美国节点
-host-suffix, zxzjtv.com, 香港节点
+host-suffix, zxzjtv.com, 全球加速
 host, mesu.apple.com, 美国节点
 host, ocsp2.apple.com, 美国节点
 host, appldnld.apple.com, 美国节点
@@ -60,9 +60,9 @@ host, news-edge.apple.com, 美国节点
 host, gateway.icloud.com, 美国节点
 host-suffix, tv.apple.com, direct
 host, game.bilibili.com, reject
-host, translate.googleapis.com, 香港节点
-host, api.hcaptcha.com, 香港节点
-host, hcaptcha.com, 香港节点
+host, translate.googleapis.com, 全球加速
+host, api.hcaptcha.com, 全球加速
+host, hcaptcha.com, 全球加速
 host-keyword, biligame.net, reject
 host, play-edge.itunes.apple.com, direct
 host, cloudflare-dns.com, 全球加速
