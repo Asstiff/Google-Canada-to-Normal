@@ -70,7 +70,7 @@ DOMAIN, cloudflare-dns.com, 全球加速
 DOMAIN-SUFFIX, coolapk.com, DIRECT
 
 
-# Copies
+# Copy
 # 避免迅雷版权问题
 DOMAIN, hub5idx.v6.shub.sandai.net, REJECT
 DOMAIN, hub5emu.v6.shub.sandai.net, REJECT
