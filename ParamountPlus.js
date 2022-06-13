@@ -113,13 +113,6 @@
        }
  
        if (response.status === 200) {
-         let url = response.headers['x-originating-url']
-         let region = url.split('/')[3]
-         region = region.split('-')[0]
-         if (region == 'title') {
-           region = 'us'
-         }
-         resolve(region.toUpperCase())
          return
        }
  
