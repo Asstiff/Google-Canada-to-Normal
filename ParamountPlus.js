@@ -93,7 +93,7 @@ const BASE_URL = "https://www.paramountplus.com/";
    $done(panel)
 
  function testParam() { 
-    let option = {
+    let opt = {
       url: BASE_URL,
       opts: opts1,
       timeout: 2800,
@@ -102,9 +102,7 @@ const BASE_URL = "https://www.paramountplus.com/";
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36'
       },
     }
-    $task.fetch(option).then(response=> {
-      //let data = response.body
-      console.log("Paramountᐩ:"+response.statusCode)
+    $task.fetch(opt).then(response=> {
       if (response.statusCode == 200) {
         //reject('Error')
         return 1;
@@ -113,7 +111,7 @@ const BASE_URL = "https://www.paramountplus.com/";
         return 0;
       } 
     })
-  }
+  };
 
  
  function getOptions() {
