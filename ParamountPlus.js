@@ -43,14 +43,10 @@
  
  const DEFAULT_OPTIONS = {
    title: 'Paramount+ 解锁检测',
-   availableContent: '支持 Paramount+ ➟ #REGION_FLAG# #REGION_NAME#',
+   availableContent: '支持 Paramount+',
    availableIcon: undefined,
    availableIconColor: undefined,
    availableStyle: 'good',
-   comingContent: 'Coming Soon ➟ #REGION_FLAG# #REGION_NAME#',
-   comingIcon: undefined,
-   comingIconColor: undefined,
-   comingStyle: 'info',
    notAvailableContent: '不支持 Paramount+',
    notAvailableIcon: undefined,
    notAvailableIconColor: undefined,
@@ -80,16 +76,6 @@
          panel['style'] = options.availableStyle
        }
        panel['content'] = replaceRegionPlaceholder(options.availableContent, region)
-       return
-     case STATUS_COMING:
-       if (options.comingIcon) {
-         panel['icon'] = options.comingIcon
-         panel['icon-color'] = options.comingIconColor ?? undefined
-       } else {
-         panel['style'] = options.comingStyle
-       }
- 
-       panel['content'] = replaceRegionPlaceholder(options.comingContent, region)
        return
      case STATUS_NOT_AVAILABLE:
        if (options.notAvailableIcon) {
@@ -127,7 +113,7 @@
        return { region, status: STATUS_COMING }
      }
  
-     let support = await Promise.race([testPublicGraphqlAPI(accessToken), timeout(options.timeout)])
+     let support = await Promise.race([testHomePage(), timeout(options.timeout)])
      if (!support) {
        return { status: STATUS_NOT_AVAILABLE }
      }
@@ -150,33 +136,7 @@
    }
  }
  
- function testPublicGraphqlAPI(accessToken) {
-   return new Promise((resolve, reject) => {
-     let opts = {
-       url: 'https://disney.api.edge.bamgrid.com/v1/public/graphql',
-       headers: {
-         'Accept-Language': 'en',
-         Authorization: accessToken,
-         'Content-Type': 'application/json',
-         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36',
-       },
-       body: JSON.stringify({
-         query:
-           'query($preferredLanguages: [String!]!, $version: String) {globalization(version: $version) { uiLanguage(preferredLanguages: $preferredLanguages) }}',
-         variables: { version: '1.5.0', preferredLanguages: ['en'] },
-       }),
-     }
- 
-     $httpClient.post(opts, function (error, response, data) {
-       if (error) {
-         reject('Error')
-         return
-       }
-       resolve(response.status === 200)
-     })
-   })
- }
- 
+
  function getLocationInfo() {
    return new Promise((resolve, reject) => {
      let opts = {
