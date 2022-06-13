@@ -106,10 +106,12 @@ const BASE_URL = "https://www.paramountplus.com/";
     }
     $task.fetch(opt).then(response=> {
       if (response.statusCode == 200) {
+        console.log("111111");
         //reject('Error')
         return 1;
       } else if (response.statusCode == 302) {
         //resolve('Not Available')
+        console.log("222222");
         return 0;
       } 
     })
