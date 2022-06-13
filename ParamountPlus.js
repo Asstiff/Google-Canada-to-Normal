@@ -5,10 +5,10 @@
  * 
  * 以下为原作者的注释
  * 
-* [Panel]
-* nf_check = script-name=nf_check, title="Paramount+ 解锁检测", content="请刷新", update-interval=1
-* [Script]
-* nf_check = type=generic, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/ParamountPlus.js, argument=title=Paramount+ 解锁检测
+ * [Panel]
+ * para_check = script-name=para_check, title="Paramount+ 解锁检测", content="请刷新", update-interval=1
+ * [Script]
+ * para_check = type=generic, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/ParamountPlus.js, argument=title=Paramount+ 解锁检测
  *
  * 支持使用脚本使用 argument 参数自定义配置，如：argument=key1=URLEncode(value1)&key2=URLEncode(value2)，具体参数如下所示，
  * title: 面板标题
