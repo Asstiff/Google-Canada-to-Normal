@@ -1,5 +1,10 @@
 /**
  *
+ * 
+ * 基于 Hyseen 的 Netflix 检测
+ * 
+ * 以下为原作者的注释
+ * 
  * [Panel]
  * nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
  *
