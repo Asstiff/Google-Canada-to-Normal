@@ -25,12 +25,12 @@
  const BASE_URL = "https://www.paramountplus.com/"
 
  const DEFAULT_OPTIONS = {
-   title: 'YouTube 333 解锁检测',
-   availableContent: '支持 YouTube Premium',
+   title: 'Paramount+ 解锁检测',
+   availableContent: '支持 Paramount+',
    availableIcon: '',
    availableIconColor: '',
    availableStyle: 'good',
-   notAvailableContent: '不支持 YouTube Premium',
+   notAvailableContent: '不支持 Paramount+',
    notAvailableIcon: '',
    notAvailableIconColor: '',
    notAvailableStyle: 'alert',
