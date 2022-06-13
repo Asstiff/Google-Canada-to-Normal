@@ -28,6 +28,7 @@
  * timeout: 超时时间，毫秒，默认为 3000
  */
 
+const BASE_URL = "https://www.paramountplus.com/";
  // 支持解锁
  const STATUS_AVAILABLE = 1
  // 不支持解锁
