@@ -71,7 +71,6 @@ const BASE_URL = "https://www.paramountplus.com/";
        } else {
          panel['style'] = options.availableStyle
        }
-       panel['content'] = replaceRegionPlaceholder(options.availableContent, region)
        return
      case STATUS_NOT_AVAILABLE:
        if (options.notAvailableIcon) {
