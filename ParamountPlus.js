@@ -99,7 +99,7 @@
          return
        }
  
-       if (data.indexOf('UNIQUE STORIES.') !== -1) {
+       if (data.indexOf('UNIQUE STORIES.') !== -1 || data.indexOf('A MOUNTAIN OF ENTERTAINMENT.') !== -1 ) {
          reject('Not Available')
          return
        }
