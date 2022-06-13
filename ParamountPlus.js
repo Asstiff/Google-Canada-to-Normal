@@ -60,7 +60,8 @@ const BASE_URL = "https://www.paramountplus.com/";
    title: options.title,
  }
  
- let statuss = testParam()
+;(async () => {
+    let {statuss } = await testParam();
  
  switch (statuss) {
      case STATUS_AVAILABLE:
@@ -90,7 +91,9 @@ const BASE_URL = "https://www.paramountplus.com/";
        }
        panel['content'] = options.errorContent
    }
-   $done(panel)
+    })().finally(() => {
+  $done(panel)
+})
 
  function testParam() { 
     let opt = {
