@@ -110,7 +110,7 @@
    })
  }
  
- function timeout(delay = 3000) {
+ function timeout(delay = 30000) {
    return new Promise((resolve, reject) => {
      setTimeout(() => {
        reject('Timeout')
