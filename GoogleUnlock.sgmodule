@@ -1,0 +1,9 @@
+#!name=Google Unlock Check
+#!desc=Google 送中检测
+#!system=ios
+
+[Panel]
+para_check = script-name=para_check, title="Google 送中检测", content="请刷新", update-interval=1
+
+[Script]
+para_check = type=generic, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/GoogleUnlock.js, argument=title=Google 送中检测
