@@ -107,21 +107,19 @@
       $task.fetch(myRequest).then(response => {
           let sCode = response.statusCode
           //console.log(pname+sCode);
-          if (sign==0) {
+          if (error != null || response.status !== 200) {
+            reject('Error')
+            return
+          }
           if (sCode == 400) {
               reject('Not Available')
               return
-          } else {
+          }
+          else {
               let region = 'US'
               resolve(region.toUpperCase())
               return
           }
-      } else {
-          return
-      }
-      }, reason => {
-          reject('Error')
-          return
       });
       })
       
