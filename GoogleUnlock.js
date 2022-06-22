@@ -102,7 +102,6 @@
           method: method,
           headers: headers,
           body: body,
-          timeout: 5000
       };
       
       $task.fetch(myRequest).then(response => {
