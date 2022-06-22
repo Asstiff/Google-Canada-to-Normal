@@ -85,32 +85,51 @@
    })
  
  function test() {
-   return new Promise((resolve, reject) => {
-     let option = {
-       url: BASE_URL,
-       headers: {
-         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
-         'Accept-Language': 'en',
-       },
-     }
-     $httpClient.get(option, function (error, response, data) {
-       if (error != null || response.status !== 200) {
-         reject('Error')
-         return
-       }
+  return new Promise((resolve, reject) => {
+      const url = BASE_URL;
+      const method = `GET`;
+      const headers = {
+          'Accept-Encoding' : `gzip, deflate, br`,
+          'Connection' : `keep-alive`,
+          'Accept' : `text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8`,
+          'Host' : `www.google.com`,
+          'User-Agent' : `Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1`,
+          'Accept-Language' : `zh-CN,zh-Hans;q=0.9`
+      };
+      const body = ``;
+      const myRequest = {
+          url: url,
+          method: method,
+          headers: headers,
+          body: body,
+          timeout: 5000
+      };
+      
+      $task.fetch(myRequest).then(response => {
+          let sCode = response.statusCode
+          //console.log(pname+sCode);
+          if (sign==0) {
+          if (sCode == 400) {
+              reject('Not Available')
+              return
+          } else {
+              let region = 'US'
+              resolve(region.toUpperCase())
+              return
+          }
+      } else {
+          return
+      }
+      }, reason => {
+          reject('Error')
+          return
+      });
+      })
+      
+  }
  
-       if (data.indexOf('400') !== -1) {
-         reject('Not Available')
-         return
-       }
- 
-       let region = 'US'
-       resolve(region.toUpperCase())
-     })
-   })
- }
- 
- function timeout(delay = 30000) {
+
+ function timeout(delay = 5000) {
    return new Promise((resolve, reject) => {
      setTimeout(() => {
        reject('Timeout')
