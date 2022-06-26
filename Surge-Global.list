@@ -9,6 +9,7 @@ DOMAIN, hcaptcha.com
 DOMAIN, mtalk.google.com
 DOMAIN, clientservices.googleapis.com
 DOMAIN-SUFFIX, cloudflare.com
+DOMAIN-SUFFIX, minecraft.net
 DOMAIN-SUFFIX, gstatic.com
 DOMAIN, cdnjs.cloudflare.com
 DOMAIN, www.recaptcha.net
