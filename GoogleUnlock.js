@@ -73,12 +73,12 @@
    .catch(error => {
      console.log(error)
      if (options.errorIcon) {
-       panel['icon'] = options.errorIcon
-       panel['icon-color'] = options.errorIconColor ? options.errorIconColor : undefined
+       panel['icon'] = options.notAvailableIcon
+       panel['icon-color'] = options.notAvailableIconColor ? options.notAvailableIconColor : undefined
      } else {
-       panel['style'] = options.errorStyle
+       panel['style'] = options.notAvailableStyle
      }
-     panel['content'] = options.errorContent
+     panel['content'] = options.notAvailableContent
    })
    .finally(() => {
      $done(panel)
