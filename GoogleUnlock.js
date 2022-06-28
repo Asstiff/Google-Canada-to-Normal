@@ -94,7 +94,7 @@
         },
       }
       $httpClient.get(option, function (error, response, data) {
-        if (error != null || response.status !== 200) {
+        if (error != null) {
           reject('Error')
           return
         }
