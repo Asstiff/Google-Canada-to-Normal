@@ -99,7 +99,7 @@
           return
         }
   
-        if (data.indexOf('400.') !== -1) {
+        if (response == 400 || data.indexOf('That’s an error.') !== -1) {
           reject('Not Available')
           return
         }
