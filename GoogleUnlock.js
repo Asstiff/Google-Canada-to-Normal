@@ -73,12 +73,12 @@
    .catch(error => {
      console.log(error)
      if (options.errorIcon) {
-       panel['icon'] = options.notAvailableIcon
-       panel['icon-color'] = options.notAvailableIconColor ? options.notAvailableIconColor : undefined
+       panel['icon'] = options.errorIcon
+       panel['icon-color'] = options.errorIconColor ? options.errorIconColor : undefined
      } else {
-       panel['style'] = options.notAvailableStyle
+       panel['style'] = options.errorStyle
      }
-     panel['content'] = options.notAvailableContent
+     panel['content'] = options.errorContent
    })
    .finally(() => {
      $done(panel)
@@ -94,12 +94,12 @@
         },
       }
       $httpClient.get(option, function (error, response, data) {
-        if (error != null || response.status !== 200) {
+        if (error != null) {
           reject('Error')
           return
         }
   
-        if (response == 400 || data.indexOf('That’s an error.') !== -1) {
+        if (response == 400 ||data.indexOf('That’s an error.') !== -1) {
           reject('Not Available')
           return
         }
