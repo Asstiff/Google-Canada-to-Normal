@@ -94,12 +94,12 @@
         },
       }
       $httpClient.get(option, function (error, response, data) {
-        if (error != null) {
+        if (error != null || response.status !== 200) {
           reject('Error')
           return
         }
   
-        if (response == 400 ) {
+        if (data.indexOf('400.') !== -1) {
           reject('Not Available')
           return
         }
