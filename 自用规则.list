@@ -14,7 +14,7 @@ host-keyword, digicert, 美国节点
 host-keyword, akisinn, 美国节点
 host-keyword, cbsi, 美国节点
 host-keyword, smoot, 美国节点
-host-keyword, prod.apple.com, 美国节点
+host-suffix, prod.apple.com, 美国节点
 host, configuration.apple.com, 美国节点
 host-keyword, stocks, 美国节点
 host-suffix, mall.bilibili.com, reject
@@ -63,7 +63,7 @@ host, game.bilibili.com, reject
 host, translate.googleapis.com, 全球加速
 host, api.hcaptcha.com, 全球加速
 host, hcaptcha.com, 全球加速
-host-keyword, biligame.net, reject
+host-suffix, biligame.net, reject
 host, play-edge.itunes.apple.com, direct
 host, cloudflare-dns.com, 全球加速
 host-suffix, coolapk.com, direct
