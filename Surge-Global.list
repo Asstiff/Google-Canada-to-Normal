@@ -11,6 +11,7 @@ DOMAIN, clientservices.googleapis.com
 DOMAIN-SUFFIX, cloudflare.com
 DOMAIN-SUFFIX, minecraft.net
 DOMAIN-SUFFIX, gstatic.com
+DOMAIN-SUFFIX, api.bilibili.com
 DOMAIN, cdnjs.cloudflare.com
 DOMAIN, www.recaptcha.net
 DOMAIN, telemetry.yazio-analytics.com
