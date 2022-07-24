@@ -12,8 +12,6 @@ DOMAIN-SUFFIX,bscabank.com, DIRECT
 DOMAIN-SUFFIX,openaboc.cn, DIRECT
 DOMAIN-SUFFIX,openaboc.com, DIRECT
 
-DOMAIN-SUFFIX, api.bilibili.com, 香港节点
-
 DOMAIN, dl.l.google.com, 全球加速
 DOMAIN, dl.google.com, 全球加速
 DOMAIN-SUFFIX, gstatic.com, 全球加速
