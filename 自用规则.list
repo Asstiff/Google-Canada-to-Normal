@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,openaboc.cn, DIRECT
 DOMAIN-SUFFIX,openaboc.com, DIRECT
 
 DOMAIN, dl.l.google.com, 全球加速
+DOMAIN, pbs.twimg.com, 全球加速
 DOMAIN, dl.google.com, 全球加速
 DOMAIN-SUFFIX, xboxlive.com, 全球加速
 DOMAIN-SUFFIX, gstatic.com, 全球加速
