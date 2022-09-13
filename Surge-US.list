@@ -22,7 +22,6 @@ DOMAIN, pd.itunes.apple.com
 DOMAIN-SUFFIX, mzstatic.com
 DOMAIN-SUFFIX, books.apple.com
 DOMAIN, bookkeeper.itunes.apple.com
-DOMAIN, weather-data.apple.com
 DOMAIN, gsa.apple.com
 DOMAIN-SUFFIX, archive.ph
 DOMAIN, xp.apple.com
