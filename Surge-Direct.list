@@ -1,14 +1,15 @@
 DOMAIN-SUFFIX, blobstore.apple.com
 DOMAIN-SUFFIX, blobstore.apple.com
-DOMAIN, sgminorshort.wechat.com
-DOMAIN, sgshort.wechat.com
-DOMAIN, c.youdao.com
-DOMAIN-SUFFIX, tv.apple.com
-DOMAIN, play-edge.itunes.apple.com
 DOMAIN-SUFFIX, coolapk.com
 DOMAIN-SUFFIX,95599.cn
 DOMAIN-SUFFIX,abchina.com
 DOMAIN-SUFFIX,bscabank.com
 DOMAIN-SUFFIX,openaboc.cn
 DOMAIN-SUFFIX,openaboc.com
-DOMAIN-SUFFIX,metrics.icloud.com
+DOMAIN-SUFFIX, tv.apple.com
+DOMAIN-SUFFIX, ipify.org
+DOMAIN, sgminorshort.wechat.com
+DOMAIN, sgshort.wechat.com
+DOMAIN, c.youdao.com
+DOMAIN, play-edge.itunes.apple.com
+DOMAIN,metrics.icloud.com

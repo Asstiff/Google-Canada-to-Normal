@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,bscabank.com, DIRECT
 DOMAIN-SUFFIX,openaboc.cn, DIRECT
 DOMAIN-SUFFIX,metrics.icloud.com, DIRECT
 DOMAIN-SUFFIX,openaboc.com, DIRECT
+DOMAIN-SUFFIX, ipify.org, DIRECT
 
 DOMAIN, dl.l.google.com, 全球加速
 DOMAIN, pbs.twimg.com, 全球加速
