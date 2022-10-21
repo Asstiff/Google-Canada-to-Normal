@@ -42,6 +42,7 @@ DOMAIN, steamcontent.com, 全球加速
 DOMAIN, steamstatic.com, 全球加速
 DOMAIN, akamaihd.net, 全球加速
 DOMAIN-SUFFIX, tenor.com, 全球加速
+DOMAIN, api.steampowered.com, 全球加速
 
 DOMAIN-SUFFIX, mall.bilibili.com, REJECT
 IP-CIDR, 203.107.1.1/24, REJECT
