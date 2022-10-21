@@ -23,6 +23,7 @@ DOMAIN, steamgames.com
 DOMAIN, steamusercontent.com
 DOMAIN, steamcontent.com
 DOMAIN, steamstatic.com
+DOMAIN, api.steampowered.com
 DOMAIN, akamaihd.net
 DOMAIN-SUFFIX, tenor.com
 DOMAIN-SUFFIX, xboxlive.com
