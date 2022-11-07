@@ -22,6 +22,7 @@ DOMAIN-SUFFIX, gstatic.com, 全球加速
 DOMAIN-SUFFIX, cloudflare.com, 全球加速
 DOMAIN-SUFFIX, annangela.cn, 全球加速
 DOMAIN, translate.googleapis.com, 全球加速
+DOMAIN-KEYWORD, yahoo, 全球加速
 DOMAIN, api.hcaptcha.com, 全球加速
 DOMAIN, hcaptcha.com, 全球加速
 DOMAIN, mtalk.google.com, 全球加速
@@ -93,3 +94,8 @@ DOMAIN, news-edge.apple.com, 美国节点
 DOMAIN, ls.apple.com, 美国节点
 DOMAIN, gateway.icloud.com, 美国节点
 DOMAIN-KEYWORD, tubi, 美国节点
+<<<<<<< HEAD
+=======
+
+DOMAIN-KEYWORD, cnbeta, 台湾节点
+>>>>>>> 955044e (1)
