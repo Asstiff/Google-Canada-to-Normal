@@ -94,8 +94,6 @@ DOMAIN, news-edge.apple.com, 美国节点
 DOMAIN, ls.apple.com, 美国节点
 DOMAIN, gateway.icloud.com, 美国节点
 DOMAIN-KEYWORD, tubi, 美国节点
-<<<<<<< HEAD
-=======
+DOMAIN-KEYWORD, playrix, 美国节点
 
 DOMAIN-KEYWORD, cnbeta, 台湾节点
->>>>>>> 955044e (1)
