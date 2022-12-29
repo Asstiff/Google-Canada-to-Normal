@@ -1,4 +1,3 @@
-let bodyOri = $response.headers;
-
-console.log(bodyOri);
+var bodyOri = $response.headers;
+bodyOri = bodyOri.replace("610", "9999999999");
 $done({bodyOri});
