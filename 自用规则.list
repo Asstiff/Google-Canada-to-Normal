@@ -64,6 +64,7 @@ DOMAIN, mesu.apple.com, 美国节点
 DOMAIN, ocsp2.apple.com, 美国节点
 DOMAIN, appldnld.apple.com, 美国节点
 DOMAIN-SUFFIX, apple.news, 美国节点
+DOMAIN-SUFFIX, podcasts.apple.com, 美国节点
 DOMAIN-SUFFIX, branch.io, 美国节点
 DOMAIN-KEYWORD, vaicore, 美国节点
 DOMAIN-KEYWORD, dewrain, 美国节点
