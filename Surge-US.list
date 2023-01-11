@@ -24,6 +24,8 @@ DOMAIN-SUFFIX, mzstatic.com
 DOMAIN-SUFFIX, books.apple.com
 DOMAIN, bookkeeper.itunes.apple.com
 DOMAIN, gsa.apple.com
+DOMAIN, buy.itunes.apple.com
+DOMAIN, client-api.itunes.apple.com
 DOMAIN-SUFFIX, archive.ph
 DOMAIN, xp.apple.com
 DOMAIN, setup.icloud.com

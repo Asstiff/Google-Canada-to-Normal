@@ -93,6 +93,8 @@ DOMAIN, apple.comscoreresearch.com, 美国节点
 DOMAIN, news-events.apple.com, 美国节点
 DOMAIN, news-edge.apple.com, 美国节点
 DOMAIN, ls.apple.com, 美国节点
+DOMAIN, buy.itunes.apple.com, 美国节点
+DOMAIN, client-api.itunes.apple.com, 美国节点
 DOMAIN, gateway.icloud.com, 美国节点
 DOMAIN-KEYWORD, tubi, 美国节点
 DOMAIN-KEYWORD, playrix, 美国节点
