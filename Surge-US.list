@@ -40,3 +40,13 @@ DOMAIN, ls.apple.com
 DOMAIN, gateway.icloud.com
 DOMAIN-KEYWORD, tubi
 DOMAIN-KEYWORD, playrix
+DOMAIN-SUFFIX,auditude.com
+DOMAIN-SUFFIX,ethn.io
+DOMAIN,r3.o.lencr.org
+DOMAIN-SUFFIX,imgix.net
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,leanplum.com
+DOMAIN-SUFFIX,starz.com
+DOMAIN-KEYWORD,linkedin
+DOMAIN-SUFFIX,my.sentry.io
+DOMAIN-SUFFIX,blobstore.apple.com
