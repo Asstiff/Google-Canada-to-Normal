@@ -48,5 +48,6 @@ DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,leanplum.com
 DOMAIN-SUFFIX,starz.com
 DOMAIN-KEYWORD,linkedin
-DOMAIN-SUFFIX,my.sentry.io
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,blobstore.apple.com
