@@ -4,4 +4,4 @@
 #!repo=https://github.com/Asstiff/Google-Canada-to-Normal
 
 [MITM]
-hostname = -httpsdns.baidu.com, -pan.baidu.com, -passport.baidu.com
+hostname = %INSERT% -httpsdns.baidu.com, -pan.baidu.com, -passport.baidu.com
