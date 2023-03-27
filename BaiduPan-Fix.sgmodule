@@ -1,7 +1,7 @@
-#!name=Mac 百度网盘无法登录修复
+#!name=百度系 MitM 修复
 #!desc=修正各种规则 MitM 导致 Mac 百度网盘无法登录
 #!author=Asstiff
 #!repo=https://github.com/Asstiff/Google-Canada-to-Normal
 
 [MITM]
-hostname = %INSERT% -httpsdns.baidu.com, -pan.baidu.com, -passport.baidu.com
+hostname = %INSERT% -httpsdns.baidu.com, -pan.baidu.com, -passport.baidu.com, -*.map.baidu.com
