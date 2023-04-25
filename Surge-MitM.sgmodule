@@ -1,0 +1,7 @@
+#!name=自用 MitM
+#!desc=自用 MitM 规则
+#!author=Asstiff
+#!repo=https://github.com/Asstiff/Google-Canada-to-Normal
+
+[MITM]
+hostname = %INSERT% dsp.fcbox.com, webchatapp.fcbox.com, passenger.t3go.cn
