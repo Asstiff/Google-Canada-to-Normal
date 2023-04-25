@@ -9,3 +9,15 @@ DOMAIN-SUFFIX, mz.unity3d.com
 DOMAIN, hub5emu.v6.shub.sandai.net
 DOMAIN, hub5btmain.v6.shub.sandai.net
 DOMAIN-KEYWORD, parallels
+URL-REGEX,^http:\/\/cdn\.133\.cn\/md\/gtgj\/,⛔️ 广告拦截
+URL-REGEX,^https:\/\/dsp\.fcbox\.com,⛔️ 广告拦截
+URL-REGEX,^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/ad\/getHomeInfo$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resourceLocation\/floating$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/v2\/resource\/bottom$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-app-api\/api\/passenger\/v1\/notice\/getRedDots$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v2\/getBeginShowCouponInfo$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v6\/ad\/getActivityPopup$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/common\/v3\/sideBars$,⛔️ 广告拦截
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/common-app-api\/api\/common\/v1\/sideAccountInfos$,⛔️ 广告拦截
