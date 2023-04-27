@@ -12,7 +12,6 @@ DOMAIN-KEYWORD, parallels
 URL-REGEX,^http:\/\/cdn\.133\.cn\/md\/gtgj\/,⛔️ 广告拦截
 URL-REGEX,^https:\/\/dsp\.fcbox\.com,⛔️ 广告拦截
 URL-REGEX,^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage,⛔️ 广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/ad\/getHomeInfo$,⛔️ 广告拦截
 URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resourceLocation\/floating$,⛔️ 广告拦截
 URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource$,⛔️ 广告拦截
 URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/v2\/resource\/bottom$,⛔️ 广告拦截
