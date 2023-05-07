@@ -6,6 +6,7 @@
 boohee = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/recommend_articles, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
 boohee_messages = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/unread, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
 boohee_messages = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/record/record_tool_ad, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
+boohee_messages = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/record/record_tool_pop_ad, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
 boohee_search = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/search/search, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest2.js, argument=
 
 [MITM]
