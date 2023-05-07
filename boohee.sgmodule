@@ -10,6 +10,7 @@ boohee_messages = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-in
 boohee_messages = type=http-response, pattern=^https?:\/\/bingo.boohee.com\/api\/v2\/buttons, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
 boohee_search = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/search/search, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest.js, argument=
 boohee_search = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/user/user_info, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest2.js, argument=
+boohee_search = type=http-response, pattern=^https?:\/\/api.boohee.com\/app-interface\/v1\/index/featured_index, requires-body=1, script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/booheeTest3.js, argument=
 
 [MITM]
 hostname = %APPEND% *.boohee.com
