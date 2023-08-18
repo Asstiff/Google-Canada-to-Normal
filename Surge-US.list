@@ -5,6 +5,7 @@ DOMAIN-SUFFIX, sectigo.com
 DOMAIN, mesu.apple.com
 DOMAIN, ocsp2.apple.com
 DOMAIN, appldnld.apple.com
+DOMAIN,gdmf.apple.com
 DOMAIN-SUFFIX, apple.news
 DOMAIN-SUFFIX, podcasts.apple.com
 DOMAIN-SUFFIX, branch.io
