@@ -8,10 +8,12 @@ DOMAIN, appldnld.apple.com
 DOMAIN,gdmf.apple.com
 DOMAIN-SUFFIX, apple.news
 DOMAIN-SUFFIX, podcasts.apple.com
+DOMAIN-SUFFIX, segment.io
 DOMAIN-SUFFIX, branch.io
+DOMAIN-SUFFIX, nelreports.net
+DOMAIN-SUFFIX, launchdarkly.com
 DOMAIN-KEYWORD, vaicore
 DOMAIN-KEYWORD, dewrain
-DOMAIN-KEYWORD, launchdarkly
 DOMAIN-KEYWORD, stripe
 DOMAIN-KEYWORD, digicert
 DOMAIN-KEYWORD, akisinn
