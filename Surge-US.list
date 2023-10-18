@@ -56,3 +56,6 @@ DOMAIN-KEYWORD,linkedin
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,bard.google.com
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
