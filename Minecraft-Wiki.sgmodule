@@ -1,0 +1,10 @@
+#!name=Minecraft Wiki
+#!desc=自动将 Fandom Minecraft Wiki 重定向至 minecraft.wiki
+#!author=Asstiff
+#!repo=https://github.com/Asstiff/Google-Canada-to-Normal
+
+[MITM]
+hostname = %APPEND% minecraft.fandom.com
+
+[URL Rewrite]
+^https?://minecraft\.fandom\.com/zh/wiki/(.*) https://zh.minecraft.wiki/w/$1 302
