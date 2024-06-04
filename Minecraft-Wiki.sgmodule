@@ -7,4 +7,5 @@
 hostname = %APPEND% minecraft.fandom.com
 
 [URL Rewrite]
-^https?://minecraft\.fandom\.com(/.*)?/wiki/(.*) https://zh.minecraft.wiki/w/$2 302
+^https?://minecraft\.fandom\.com/wiki/(.*) https://minecraft.wiki/w/$1 302
+^https?://minecraft\.fandom\.com/([^/]+)/wiki/(.*) https://$1.minecraft.wiki/w/$2 302
