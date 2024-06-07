@@ -10,8 +10,9 @@ DOMAIN-SUFFIX, tv.apple.com
 DOMAIN-SUFFIX, ipify.org
 DOMAIN-SUFFIX, map.qq.com
 DOMAIN-SUFFIX, map.xiaojukeji.com
+DOMAIN-SUFFIX, chat.bilibili.com
 DOMAIN, sgminorshort.wechat.com
 DOMAIN, sgshort.wechat.com
 DOMAIN, c.youdao.com
 DOMAIN, play-edge.itunes.apple.com
-DOMAIN,metrics.icloud.com
+DOMAIN, metrics.icloud.com
