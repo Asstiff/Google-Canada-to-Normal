@@ -59,8 +59,7 @@ DOMAIN-SUFFIX,bard.google.com
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,init.ess.apple.com
+DOMAIN-SUFFIX,ess.apple.com
 DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN,identity.ess.apple.com
