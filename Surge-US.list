@@ -64,3 +64,9 @@ DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,itunes.apple.com
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN, metrics.icloud.com
+DOMAIN-SUFFIX,adobe-identity.com
+DOMAIN,cdn-sharing.adobecc.com
+DOMAIN-SUFFIX,adobe.com
+DOMAIN-SUFFIX,adobeccstatic.com
+DOMAIN-SUFFIX,adobe.io
+DOMAIN,adobesparkpost-web.app.link
