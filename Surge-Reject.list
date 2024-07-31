@@ -12,6 +12,7 @@ DOMAIN-SUFFIX, mz.unity3d.com
 DOMAIN-KEYWORD, parallels
 DOMAIN-KEYWORD, unityads
 DOMAIN, content-understand-strategy.sm.cn
+DOMAIN,weather-analytics-events.apple.com
 DOMAIN-SUFFIX, gamecenter.qq.com
 URL-REGEX,^http:\/\/cdn\.133\.cn\/md\/gtgj\/,广告拦截
 URL-REGEX,^https:\/\/dsp\.fcbox\.com,广告拦截

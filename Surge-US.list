@@ -66,3 +66,6 @@ DOMAIN-SUFFIX,adobe.com
 DOMAIN-SUFFIX,adobeccstatic.com
 DOMAIN-SUFFIX,adobe.io
 DOMAIN,adobesparkpost-web.app.link
+DOMAIN-SUFFIX,fba.apple.com
+DOMAIN-SUFFIX,siri.apple.com
+DOMAIN,probe.icloud.com
