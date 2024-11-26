@@ -1,11 +1,16 @@
-IP-CIDR, 203.107.1.1/24
 DOMAIN, ad.12306.cn
 DOMAIN, game.bilibili.com
 DOMAIN,iuni.telecome.cn
+DOMAIN,h2tcbox.baidu.com
+DOMAIN,bgg.baidu.com
+DOMAIN,huiduapi.nuomi.com
 DOMAIN,userlink.alicdn.com
 DOMAIN, hub5idx.v6.shub.sandai.net
 DOMAIN, hub5emu.v6.shub.sandai.net
 DOMAIN, hub5btmain.v6.shub.sandai.net
+DOMAIN,bz-ipdx.baidu.com
+DOMAIN,pop.pcsnetwork.netdisk.baidu.com
+DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX, mall.bilibili.com
 DOMAIN-SUFFIX, biligame.net
 DOMAIN-SUFFIX, mz.unity3d.com
@@ -14,18 +19,20 @@ DOMAIN-KEYWORD, unityads
 DOMAIN, content-understand-strategy.sm.cn
 DOMAIN,weather-analytics-events.apple.com
 DOMAIN-SUFFIX, gamecenter.qq.com
-URL-REGEX,^http:\/\/cdn\.133\.cn\/md\/gtgj\/,广告拦截
-URL-REGEX,^https:\/\/dsp\.fcbox\.com,广告拦截
-URL-REGEX,^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resourceLocation\/floating$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/v2\/resource\/bottom$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-app-api\/api\/passenger\/v1\/notice\/getRedDots$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v2\/getBeginShowCouponInfo$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v6\/ad\/getActivityPopup$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/common\/v3\/sideBars$,广告拦截
-URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/common-app-api\/api\/common\/v1\/sideAccountInfos$,广告拦截
-URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn\/1\.0\?,广告拦截
-URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn\/1\.0\?,广告拦截
-URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn\/1\.0\?,广告拦截
-URL-REGEX,^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$,广告拦截
+IP-CIDR,95.161.76.100/31
+URL-REGEX,^http:\/\/cdn\.133\.cn\/md\/gtgj\/
+URL-REGEX,^https:\/\/dsp\.fcbox\.com
+URL-REGEX,^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resourceLocation\/floating$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v1\/resource\/getSource$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/v2\/resource\/bottom$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-app-api\/api\/passenger\/v1\/notice\/getRedDots$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v2\/getBeginShowCouponInfo$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/notoken\/api\/v6\/ad\/getActivityPopup$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/passenger-activity-api\/api\/common\/v3\/sideBars$
+URL-REGEX,^https:\/\/passenger\.t3go\.cn:443\/common-app-api\/api\/common\/v1\/sideAccountInfos$
+URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(acquire|event|close)\.cn\/1\.0\?,
+URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.index\.cn\/1\.0\?
+URL-REGEX,^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn\/1\.0\?
+URL-REGEX,^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$
+IP-CIDR, 203.107.1.1/24

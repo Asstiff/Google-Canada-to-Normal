@@ -69,3 +69,12 @@ DOMAIN,adobesparkpost-web.app.link
 DOMAIN-SUFFIX,fba.apple.com
 DOMAIN-SUFFIX,siri.apple.com
 DOMAIN,probe.icloud.com
+DOMAIN,gdmf.apple.com
+DOMAIN,p103-acsegateway.icloud.com
+DOMAIN,sandbox.itunes.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,p103-mailws.icloud.com
+DOMAIN-SUFFIX,gc.apple.com

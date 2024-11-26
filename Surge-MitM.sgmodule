@@ -4,7 +4,7 @@
 #!repo=https://github.com/Asstiff/Google-Canada-to-Normal
 
 [MITM]
-hostname = %APPEND% dsp.fcbox.com, webchatapp.fcbox.com, passenger.t3go.cn, cube.elemecdn.com, nr-op.elemecdn.com
+hostname = %APPEND% dsp.fcbox.com, webchatapp.fcbox.com, passenger.t3go.cn, cube.elemecdn.com, nr-op.elemecdn.com, seed-sequoia.siri.apple.com, api.chatanywhere.tech, ga.gamejym.com, tga-data-upload.hrgame.com.cn, list-app-m.i4.cn, guzzoni.smoot.apple.com, weatherkit.apple.com, -*.wikipedia.org, zzh5.xiaomaigame.cn, active.starbucks.com.cn, -bff.starbucks.com.cn, *.popcap.com, www.coolapk.com:443, wrapper.cyapi.cn, biz.cyapi.cn, common.diditaxi.com.cn, boohee-status.oss-cn-shanghai.aliyuncs.com:443
 
 [URL Rewrite]
 ^https:\/\/(nr-op|cube)\.elemecdn\.com\/.+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{4,},h_\d{4,}\/($|format,webp\/$) - reject

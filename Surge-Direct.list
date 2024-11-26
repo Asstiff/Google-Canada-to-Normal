@@ -15,3 +15,9 @@ DOMAIN, sgminorshort.wechat.com
 DOMAIN, sgshort.wechat.com
 DOMAIN, c.youdao.com
 DOMAIN, play-edge.itunes.apple.com
+DOMAIN,odr.itunes.apple.com
+DOMAIN-SUFFIX,object-storage.apple.com
+DOMAIN,search-app-m.i4.cn
+DOMAIN-SUFFIX,me.com.akadns.net
+DOMAIN-SUFFIX,me.com
+DOMAIN,iosapps.itunes.apple.com
