@@ -21,3 +21,4 @@ DOMAIN,search-app-m.i4.cn
 DOMAIN-SUFFIX,me.com.akadns.net
 DOMAIN-SUFFIX,me.com
 DOMAIN,iosapps.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com,DIRECT

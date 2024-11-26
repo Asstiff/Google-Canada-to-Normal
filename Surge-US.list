@@ -77,4 +77,6 @@ DOMAIN,apple-relay.apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,amazonaws.com
 DOMAIN-SUFFIX,p103-mailws.icloud.com
+DOMAIN,p103-acsegateway.icloud.com
+DOMAIN,sandbox.itunes.apple.com
 DOMAIN-SUFFIX,gc.apple.com
