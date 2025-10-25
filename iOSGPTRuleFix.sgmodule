@@ -1,0 +1,7 @@
+#!name=iOS GPT 修复
+#!desc=blah blah blah
+#!author=Asstiff
+#!repo=https://github.com/Asstiff/Google-Canada-to-Normal
+
+[Rule]
+DOMAIN-SUFFIX, ls.apple.com, AI
