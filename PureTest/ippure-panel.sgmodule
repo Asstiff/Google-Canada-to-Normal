@@ -7,4 +7,4 @@
 ippure-panel = script-name=ippure-check,update-interval=3600,title="IP 纯净度",icon=network.badge.shield.half.filled,icon-color=#6366F1
 
 [Script]
-ippure-check = type=generic,timeout=30,script-path=ippure-check.js
+ippure-check = type=generic,timeout=30,script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/refs/heads/main/PureTest/ippure-check.js
