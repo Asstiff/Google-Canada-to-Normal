@@ -1,0 +1,10 @@
+#!name=IPPure IP纯净度检测
+#!desc=一键检测IP纯净度、风险评分及归属信息
+#!system=ios
+#!author=@Claude
+
+[Panel]
+ippure-panel = script-name=ippure-check,update-interval=3600,title="IP 纯净度",icon=network.badge.shield.half.filled,icon-color=#6366F1
+
+[Script]
+ippure-check = type=generic,timeout=30,script-path=ippure-check.js
