@@ -90,7 +90,7 @@
 
   var alertSourceUrl = removeQueryParameter(removeQueryParameter(requestUrl, 'from'), 'qwa_lang');
 
-  var APPLE_I18N = {"zh-CN":{"l":"zh-CN","t":"恶劣天气警报","p":"{n} 则极端天气警报","sl":{"extreme":"严重程度：极端","severe":"严重程度：严重","moderate":"严重程度：中等","minor":"严重程度：轻微","unknown":"严重程度：未知"},"sd":{"extreme":"异常威胁生命或财产","severe":"严重威胁生命或财产","moderate":"可能威胁生命或财产","minor":"对生命或财产几乎没有已知威胁","unknown":"这个警报的严重程度未知。"},"d":"描述","a":"受影响区域","i":"签发者","u":"上次更新日期：{date}","v":"查看警报源","fh":"天气警报不可用","fb":"恶劣天气警报可能会被取消或不再生效。","r1":"建议的行动","rp":"建议的行动"},"en-US":{"l":"en-US","t":"Severe Weather Alert","p":"{n} Severe Weather Alerts","sl":{"extreme":"Severity: <span class=\"regular\">Extreme</span>","severe":"Severity: <span class=\"regular\">Severe</span>","moderate":"Severity:<span class=\"regular\"> Moderate</span>","minor":"Severity: <span class=\"regular\">Minor</span>","unknown":"Severity: <span class=\"regular\">Unknown</span>"},"sd":{"extreme":"Extraordinary threat to life or property","severe":"Significant threat to life or property","moderate":"Possible threat to life or property","minor":"Minimal to no known threat to life or property","unknown":"The severity of this alert is not known."},"d":"Description","a":"Affected Area","i":"Issued By","u":"Last updated: {date}","v":"View Alert Source","fh":"Weather Alert Unavailable","fb":"The severe weather alert may be canceled or no longer in effect.","r1":"Action Recommended","rp":"Actions Recommended"}};
+  var APPLE_I18N = {"zh-CN":{"l":"zh-CN","t":"恶劣天气警报","p":"{n} 则极端天气警报","sl":{"extreme":"严重程度：极端","severe":"严重程度：严重","moderate":"严重程度：中等","minor":"严重程度：轻微","unknown":"严重程度：未知"},"sd":{"extreme":"异常威胁生命或财产","severe":"严重威胁生命或财产","moderate":"可能威胁生命或财产","minor":"对生命或财产几乎没有已知威胁","unknown":"这个警报的严重程度未知。"},"o":"天气事件发生","d":"描述","a":"受影响区域","i":"签发者","v":"查看警报源","fh":"天气警报不可用","fb":"恶劣天气警报可能会被取消或不再生效。","r1":"建议的行动","rp":"建议的行动"},"en-US":{"l":"en-US","t":"Severe Weather Alert","p":"{n} Severe Weather Alerts","sl":{"extreme":"Severity: <span class=\"regular\">Extreme</span>","severe":"Severity: <span class=\"regular\">Severe</span>","moderate":"Severity:<span class=\"regular\"> Moderate</span>","minor":"Severity: <span class=\"regular\">Minor</span>","unknown":"Severity: <span class=\"regular\">Unknown</span>"},"sd":{"extreme":"Extraordinary threat to life or property","severe":"Significant threat to life or property","moderate":"Possible threat to life or property","minor":"Minimal to no known threat to life or property","unknown":"The severity of this alert is not known."},"o":"Weather Event Onset","d":"Description","a":"Affected Area","i":"Issued By","v":"View Alert Source","fh":"Weather Alert Unavailable","fb":"The severe weather alert may be canceled or no longer in effect.","r1":"Action Recommended","rp":"Actions Recommended"}};
 
   var locale = /\/en\/severe-weather\//i.test(requestUrl) ? 'en-US' : 'zh-CN';
   var strings = APPLE_I18N[locale];
@@ -276,9 +276,8 @@
     var severityDescription = strings.sd[item.severity] || strings.sd.unknown;
     var collapsedDirection = pageDirection === 'rtl' ? 'left' : 'right';
     var sections = '';
-    var updatedFooter = '';
-    if (item.issue) updatedFooter = String(strings.u || '{date}').replace('{date}', formatDate(item.issue));
-    sections += contentSection(severityLabel, severityDescription, updatedFooter);
+    sections += contentSection(severityLabel, severityDescription);
+    if (item.issue) sections += contentSection(escapeHtml(strings.o), formatDate(item.issue));
     var descriptionBodies = [];
     if (item.message) descriptionBodies.push(item.message);
     if (item.standard) descriptionBodies.push(item.standard);
