@@ -125,24 +125,24 @@
 
   function severityFrom(className, title) {
     var source = (String(className || '') + ' ' + String(title || '')).toLowerCase();
-    if (/warning--red|红色|紅色|\bred\b/.test(source)) return 'extreme';
+    if (/warning--red|红色\bred\b/.test(source)) return 'extreme';
     if (/warning--orange|橙色|\borange\b/.test(source)) return 'severe';
-    if (/warning--yellow|黄色|黃色|\byellow\b/.test(source)) return 'moderate';
-    if (/warning--blue|蓝色|藍色|\bblue\b/.test(source)) return 'minor';
+    if (/warning--yellow|黄色|\byellow\b/.test(source)) return 'moderate';
+    if (/warning--blue|蓝色|\bblue\b/.test(source)) return 'minor';
     return 'unknown';
   }
 
   function extractSource(title) {
     var value = String(title || '');
-    var chinese = value.match(/^(.+?(?:气象台|氣象台|气象局|氣象局))/);
+    var chinese = value.match(/^(.+?(?:气象台|气象局))/);
     if (chinese) return chinese[1];
-    var issued = value.match(/^(.+?)\s+(?:issues?|issued|发布|發佈|發布)/i);
+    var issued = value.match(/^(.+?)\s+(?:issues?|issued|发布)/i);
     return issued ? issued[1] : '';
   }
 
   function parseDate(raw) {
     raw = String(raw || '')
-      .replace(/^(?:Issue\s+date|发布\s*日期|發[佈布]\s*日期)\s*[:：]\s*/i, '')
+      .replace(/^(?:Issue\s+date|发布\s*日期)\s*[:：]\s*/i, '')
       .trim();
     if (!raw) return null;
     var date = new Date(raw);
@@ -207,7 +207,7 @@
   var city = firstMatch(originalBody, /<h1[^>]*class=["'][^"']*c-submenu__location[^"']*["'][^>]*>([\s\S]*?)<\/h1>/i, '');
   if (!city) {
     var titleText = firstMatch(originalBody, /<title>([\s\S]*?)<\/title>/i, '');
-    city = titleText.replace(/\s*(?:severe weather warning|灾害预警|災害預警|天气预警|天氣預警).*$/i, '').trim();
+    city = titleText.replace(/\s*(?:severe weather warning|灾害预警|天气预警).*$/i, '').trim();
   }
   var administration = firstMatch(originalBody, /<span[^>]*class=["'][^"']*c-submenu__location-adm[^"']*["'][^>]*>([\s\S]*?)<\/span>/i, '');
   var affectedArea = city || administration;
@@ -228,7 +228,7 @@
     var title = firstMatch(block, /<h3[^>]*>([\s\S]*?)<\/h3>/i, '');
     var issueRaw = firstMatch(
       block,
-      /<p[^>]*>\s*((?:Issue\s+date|发布\s*日期|發[佈布]\s*日期)\s*[:：][\s\S]*?)<\/p>/i,
+      /<p[^>]*>\s*((?:Issue\s+date|发布\s*日期)\s*[:：][\s\S]*?)<\/p>/i,
       ''
     );
     var message = firstMatch(block, /<p[^>]*class=["'][^"']*warning-events__txt[^"']*["'][^>]*>([\s\S]*?)<\/p>/i, '');
