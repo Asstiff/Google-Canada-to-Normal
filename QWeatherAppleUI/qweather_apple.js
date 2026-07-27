@@ -142,7 +142,7 @@
 
   function parseDate(raw) {
     raw = String(raw || '')
-      .replace(/^(?:Issue\s+date|发布\s*日期)\s*[:：]\s*/i, '')
+      .replace(/^(?:Issue\s+date|发布\s*日期|發[佈布]\s*日期)\s*[:：]\s*/i, '')
       .trim();
     if (!raw) return null;
     var date = new Date(raw);
@@ -228,7 +228,7 @@
     var title = firstMatch(block, /<h3[^>]*>([\s\S]*?)<\/h3>/i, '');
     var issueRaw = firstMatch(
       block,
-      /<p[^>]*>\s*((?:Issue\s+date|发布\s*日期)\s*[:：][\s\S]*?)<\/p>/i,
+      /<p[^>]*>\s*((?:Issue\s+date|发布\s*日期|發[佈布]\s*日期)\s*[:：][\s\S]*?)<\/p>/i,
       ''
     );
     var message = firstMatch(block, /<p[^>]*class=["'][^"']*warning-events__txt[^"']*["'][^>]*>([\s\S]*?)<\/p>/i, '');
