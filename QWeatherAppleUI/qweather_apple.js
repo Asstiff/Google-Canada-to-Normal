@@ -144,17 +144,50 @@
     raw = String(raw || '').replace(/^Issue date:\s*/i, '').trim();
     if (!raw) return null;
     var date = new Date(raw);
-    return isNaN(date.getTime()) ? null : date;
+    if (isNaN(date.getTime())) return null;
+
+    // Keep QWeather's source wall time and UTC offset. Formatting only the Date
+    // would silently convert the alert time to the device's current time zone.
+    var parts = raw.match(/^(\d{4})-(\d{2})-(\d{2})[T ](\d{2}):(\d{2})(?::(\d{2})(?:\.\d+)?)?(Z|([+-])(\d{2}):?(\d{2}))$/i);
+    var wallDate = null;
+    var timeZoneLabel = '';
+    if (parts) {
+      wallDate = new Date(Date.UTC(
+        Number(parts[1]), Number(parts[2]) - 1, Number(parts[3]),
+        Number(parts[4]), Number(parts[5]), Number(parts[6] || 0)
+      ));
+      if (parts[7].toUpperCase() === 'Z') {
+        timeZoneLabel = 'GMT';
+      } else {
+        var offsetHour = String(Number(parts[9]));
+        var offsetMinute = Number(parts[10]);
+        timeZoneLabel = 'GMT' + parts[8] + offsetHour + (offsetMinute ? ':' + String(offsetMinute).replace(/^(\d)$/, '0$1') : '');
+      }
+    }
+    return { date: date, wallDate: wallDate, timeZoneLabel: timeZoneLabel, raw: raw };
   }
 
-  function formatDate(date) {
-    if (!date) return '';
+  function formatDate(issue) {
+    if (!issue) return '';
+    var date = issue.wallDate || issue.date || issue;
+    var timeOptions = { hour: 'numeric', minute: '2-digit' };
+    var dateOptions = { day: 'numeric', month: 'long' };
+    if (issue.wallDate) {
+      timeOptions.timeZone = 'UTC';
+      dateOptions.timeZone = 'UTC';
+    }
     try {
-      return new Intl.DateTimeFormat(locale, {
-        month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
-      }).format(date);
+      var timeText = date.toLocaleTimeString(locale, timeOptions);
+      var dateText = date.toLocaleDateString(locale, dateOptions);
+      var timeZoneText = issue.timeZoneLabel;
+      if (!timeZoneText) {
+        var timeWithZoneOptions = { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' };
+        var timeWithZone = date.toLocaleTimeString(locale, timeWithZoneOptions);
+        timeZoneText = timeWithZone.replace(timeText, '').replace(/^[\s,，()]+|[\s,，()]+$/g, '') || 'GMT';
+      }
+      return timeText + ' (' + timeZoneText + ')' + (locale === 'zh-CN' ? '，' : ', ') + dateText;
     } catch (_) {
-      return date.toISOString();
+      return issue.raw || date.toISOString();
     }
   }
 
@@ -243,7 +276,9 @@
     var severityDescription = strings.sd[item.severity] || strings.sd.unknown;
     var collapsedDirection = pageDirection === 'rtl' ? 'left' : 'right';
     var sections = '';
-    sections += contentSection(severityLabel, severityDescription);
+    var updatedFooter = '';
+    if (item.issue) updatedFooter = String(strings.u || '{date}').replace('{date}', formatDate(item.issue));
+    sections += contentSection(severityLabel, severityDescription, updatedFooter);
     var descriptionBodies = [];
     if (item.message) descriptionBodies.push(item.message);
     if (item.standard) descriptionBodies.push(item.standard);
@@ -252,12 +287,10 @@
       sections += contentSection(escapeHtml(item.guidelines.length === 1 ? strings.r1 : strings.rp), item.guidelines);
     }
     if (affectedArea) sections += contentSection(escapeHtml(strings.a), affectedArea);
-    var updatedFooter = '';
-    if (item.issue) updatedFooter = String(strings.u || '{date}').replace('{date}', formatDate(item.issue));
     sections += contentSection(
       escapeHtml(strings.i),
       item.source || administration || 'QWeather',
-      updatedFooter,
+      '',
       { href: alertSourceUrl, text: strings.v }
     );
 
