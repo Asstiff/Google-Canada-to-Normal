@@ -216,7 +216,7 @@
   }
 
   function chevronSvg(direction) {
-    return '<span class="ChevronSymbol chevron-' + direction + '" style="height:12px" aria-hidden="true"><svg viewBox="0 0 12 12" width="12" height="12"><path d="M2.15 4.1a.9.9 0 0 1 1.27 0L6 6.68 8.58 4.1a.9.9 0 1 1 1.27 1.27L6.64 8.58a.9.9 0 0 1-1.28 0L2.15 5.37a.9.9 0 0 1 0-1.27Z"/></svg></span>';
+    return '<span class="ChevronSymbol chevron-' + direction + ' " style="height: 12px;"><svg viewBox="0 0 90.778076171875 54.6396484375" version="1.1" xmlns="http://www.w3.org/2000/svg" class=" glyph-box" style="height: 12px; width: 12px;"><g transform="matrix(1 0 0 1 -9.465986328124927 62.5498046875)"><path d="M56.3477-7.91016C58.3496-7.91016 60.0586-8.69141 61.6211-10.3027L98.3398-47.8516C99.6094-49.1211 100.244-50.6348 100.244-52.4414C100.244-56.1035 97.3145-59.082 93.6523-59.082C91.8945-59.082 90.1855-58.3008 88.8672-56.9824L56.3965-23.584L23.8281-56.9824C22.5098-58.3008 20.8496-59.082 18.9941-59.082C15.3809-59.082 12.4512-56.1035 12.4512-52.4414C12.4512-50.6348 13.1348-49.1211 14.3555-47.8516L51.0742-10.2539C52.6855-8.69141 54.3457-7.91016 56.3477-7.91016Z"></path></g></svg></span>';
   }
 
   function contentBody(text) {
