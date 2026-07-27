@@ -2,7 +2,7 @@
 #!desc=将 QWeather 恶劣天气预警页面重绘为 Apple Weather 风格
 
 [Script]
-QWeather Apple Style = type=http-response,pattern=^https:\/\/(?:www\.)?qweather\.com\/(?:en\/)?severe-weather\/.*\.html,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/QWeatherAppleUI/qweather_apple.js
+QWeather Apple Style = type=http-response,pattern=^https:\/\/(?:www\.)?qweather\.com\/(?:en\/)?severe-weather\/[^?#]*\.html\?from=AppleWeatherService(?:&[^#]*)?$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Asstiff/Google-Canada-to-Normal/main/QWeatherAppleUI/qweather_apple.js
 
 [MITM]
 hostname = %APPEND% www.qweather.com, qweather.com
