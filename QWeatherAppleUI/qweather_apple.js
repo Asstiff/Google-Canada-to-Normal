@@ -141,7 +141,9 @@
   }
 
   function parseDate(raw) {
-    raw = String(raw || '').replace(/^Issue date:\s*/i, '').trim();
+    raw = String(raw || '')
+      .replace(/^(?:Issue\s+date|发布\s*日期)\s*[:：]\s*/i, '')
+      .trim();
     if (!raw) return null;
     var date = new Date(raw);
     if (isNaN(date.getTime())) return null;
@@ -224,7 +226,11 @@
     if (nearby !== -1 && nearby < end) end = nearby;
     var block = originalBody.slice(starts[i].contentStart, end);
     var title = firstMatch(block, /<h3[^>]*>([\s\S]*?)<\/h3>/i, '');
-    var issueRaw = firstMatch(block, /<p[^>]*>\s*(Issue date:[\s\S]*?)<\/p>/i, '');
+    var issueRaw = firstMatch(
+      block,
+      /<p[^>]*>\s*((?:Issue\s+date|发布\s*日期|發[佈布]\s*日期)\s*[:：][\s\S]*?)<\/p>/i,
+      ''
+    );
     var message = firstMatch(block, /<p[^>]*class=["'][^"']*warning-events__txt[^"']*["'][^>]*>([\s\S]*?)<\/p>/i, '');
     var standardBlock = firstMatch(block, /<div[^>]*class=["'][^"']*warning-explain[^"']*["'][^>]*>([\s\S]*?)<\/div>/i, '');
     var standard = firstMatch(standardBlock || block, /<h4[^>]*>\s*Description\s*<\/h4>\s*<p[^>]*>([\s\S]*?)<\/p>/i, '');
@@ -341,7 +347,7 @@
   headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0';
   headers['Pragma'] = 'no-cache';
   headers['Expires'] = '0';
-  headers['X-QWeather-Apple-Style'] = 'active-v8-apple-glyph-foldable-single';
+  headers['X-QWeather-Apple-Style'] = 'active-v9-event-onset';
 
   if (typeof console !== 'undefined' && console.log) {
     console.log('[QWeather Apple] rendered ' + cards.length + ' alert(s), locale=' + locale + ', bytes=' + output.length);
